@@ -126,7 +126,7 @@ body {
 }
 
 button,
-.remove-button {
+.button {
   border: 2px solid #f2f2f2;
   background: none;
   flex-basis: 48%;
@@ -141,9 +141,9 @@ button,
   box-sizing: padding-box;
 }
 button:hover,
-.remove-button:hover,
+.button:hover,
 button:focus,
-.remove-button:focus {
+.button:focus {
   border-color: #00f;
   outline: 0;
   cursor: pointer;
