@@ -1,14 +1,16 @@
 import Main from "./components/Main";
 import "./App.css";
-import React from "react";
-import './styles/style.css';
+import "./styles/style.css";
+import { connect } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <Main />
-    </div>
-  );
+function mapStateToProps(state) {
+  return {
+    posts: state,
+  };
 }
+
+const App = connect(mapStateToProps)(Main);
+
+// this.props.posts
 
 export default App;
